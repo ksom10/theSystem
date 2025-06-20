@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A59A8DA2E0358D400A90F0A /* BossesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A59A8D92E0358D400A90F0A /* BossesView.swift */; };
+		8A59A8DD2E035EB000A90F0A /* LadyIndica+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A59A8DB2E035EB000A90F0A /* LadyIndica+CoreDataClass.swift */; };
+		8A59A8DE2E035EB000A90F0A /* LadyIndica+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A59A8DC2E035EB000A90F0A /* LadyIndica+CoreDataProperties.swift */; };
 		8AC97BE62DDA94560001EAF4 /* TheSystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97BE52DDA94560001EAF4 /* TheSystemApp.swift */; };
 		8AC97BE82DDA94560001EAF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97BE72DDA94560001EAF4 /* ContentView.swift */; };
 		8AC97BEA2DDA94590001EAF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC97BE92DDA94590001EAF4 /* Assets.xcassets */; };
@@ -14,6 +17,26 @@
 		8AC97BF72DDA94590001EAF4 /* TheSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97BF62DDA94590001EAF4 /* TheSystemTests.swift */; };
 		8AC97C012DDA94590001EAF4 /* TheSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C002DDA94590001EAF4 /* TheSystemUITests.swift */; };
 		8AC97C032DDA94590001EAF4 /* TheSystemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C022DDA94590001EAF4 /* TheSystemUITestsLaunchTests.swift */; };
+		8AC97C102DDA96480001EAF4 /* XPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C0F2DDA96480001EAF4 /* XPManager.swift */; };
+		8AC97C122DDA96720001EAF4 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C112DDA96720001EAF4 /* Category.swift */; };
+		8AC97C142DDA9C6D0001EAF4 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C132DDA9C6D0001EAF4 /* MainTabView.swift */; };
+		8AC97C162DDA9C850001EAF4 /* DailyObjective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C152DDA9C850001EAF4 /* DailyObjective.swift */; };
+		8AC97C182DDA9C980001EAF4 /* QuestLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C172DDA9C980001EAF4 /* QuestLogView.swift */; };
+		8AC97C1A2DDA9CAE0001EAF4 /* RewardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C192DDA9CAE0001EAF4 /* RewardManager.swift */; };
+		8AC97C1E2DDACBBB0001EAF4 /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C1D2DDACBBB0001EAF4 /* CategoryDetailView.swift */; };
+		8AC97C202DDE12D40001EAF4 /* RewardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C1F2DDE12D40001EAF4 /* RewardsView.swift */; };
+		8AC97C232DDE780D0001EAF4 /* TheSystemModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C212DDE780D0001EAF4 /* TheSystemModel.xcdatamodeld */; };
+		8AC97C2E2DDE7B000001EAF4 /* AuraStreak+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C262DDE7B000001EAF4 /* AuraStreak+CoreDataClass.swift */; };
+		8AC97C2F2DDE7B000001EAF4 /* AuraStreak+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C272DDE7B000001EAF4 /* AuraStreak+CoreDataProperties.swift */; };
+		8AC97C302DDE7B000001EAF4 /* XPStat+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C282DDE7B000001EAF4 /* XPStat+CoreDataClass.swift */; };
+		8AC97C312DDE7B000001EAF4 /* XPStat+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C292DDE7B000001EAF4 /* XPStat+CoreDataProperties.swift */; };
+		8AC97C322DDE7B000001EAF4 /* Velkrax+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C2A2DDE7B000001EAF4 /* Velkrax+CoreDataClass.swift */; };
+		8AC97C332DDE7B000001EAF4 /* Velkrax+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C2B2DDE7B000001EAF4 /* Velkrax+CoreDataProperties.swift */; };
+		8AC97C422DDE8D450001EAF4 /* ObjectiveEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C402DDE8D450001EAF4 /* ObjectiveEntity+CoreDataClass.swift */; };
+		8AC97C432DDE8D450001EAF4 /* ObjectiveEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C412DDE8D450001EAF4 /* ObjectiveEntity+CoreDataProperties.swift */; };
+		8AC97C452DDE8F030001EAF4 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C442DDE8F030001EAF4 /* PersistenceController.swift */; };
+		8AC97C482DE5FA810001EAF4 /* GlobalStats+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C462DE5FA810001EAF4 /* GlobalStats+CoreDataClass.swift */; };
+		8AC97C492DE5FA810001EAF4 /* GlobalStats+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97C472DE5FA810001EAF4 /* GlobalStats+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A59A8D92E0358D400A90F0A /* BossesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BossesView.swift; sourceTree = "<group>"; };
+		8A59A8DB2E035EB000A90F0A /* LadyIndica+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LadyIndica+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8A59A8DC2E035EB000A90F0A /* LadyIndica+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LadyIndica+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8AC97BE22DDA94560001EAF4 /* TheSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC97BE52DDA94560001EAF4 /* TheSystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSystemApp.swift; sourceTree = "<group>"; };
 		8AC97BE72DDA94560001EAF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +70,26 @@
 		8AC97BFC2DDA94590001EAF4 /* TheSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC97C002DDA94590001EAF4 /* TheSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSystemUITests.swift; sourceTree = "<group>"; };
 		8AC97C022DDA94590001EAF4 /* TheSystemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSystemUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8AC97C0F2DDA96480001EAF4 /* XPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPManager.swift; sourceTree = "<group>"; };
+		8AC97C112DDA96720001EAF4 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		8AC97C132DDA9C6D0001EAF4 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		8AC97C152DDA9C850001EAF4 /* DailyObjective.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyObjective.swift; sourceTree = "<group>"; };
+		8AC97C172DDA9C980001EAF4 /* QuestLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestLogView.swift; sourceTree = "<group>"; };
+		8AC97C192DDA9CAE0001EAF4 /* RewardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardManager.swift; sourceTree = "<group>"; };
+		8AC97C1D2DDACBBB0001EAF4 /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
+		8AC97C1F2DDE12D40001EAF4 /* RewardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsView.swift; sourceTree = "<group>"; };
+		8AC97C222DDE780D0001EAF4 /* TheSystemModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheSystemModel.xcdatamodel; sourceTree = "<group>"; };
+		8AC97C262DDE7B000001EAF4 /* AuraStreak+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuraStreak+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8AC97C272DDE7B000001EAF4 /* AuraStreak+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuraStreak+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8AC97C282DDE7B000001EAF4 /* XPStat+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XPStat+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8AC97C292DDE7B000001EAF4 /* XPStat+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XPStat+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8AC97C2A2DDE7B000001EAF4 /* Velkrax+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Velkrax+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8AC97C2B2DDE7B000001EAF4 /* Velkrax+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Velkrax+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8AC97C402DDE8D450001EAF4 /* ObjectiveEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObjectiveEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8AC97C412DDE8D450001EAF4 /* ObjectiveEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObjectiveEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8AC97C442DDE8F030001EAF4 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		8AC97C462DE5FA810001EAF4 /* GlobalStats+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GlobalStats+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8AC97C472DE5FA810001EAF4 /* GlobalStats+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GlobalStats+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +140,31 @@
 		8AC97BE42DDA94560001EAF4 /* TheSystem */ = {
 			isa = PBXGroup;
 			children = (
+				8A59A8DB2E035EB000A90F0A /* LadyIndica+CoreDataClass.swift */,
+				8A59A8DC2E035EB000A90F0A /* LadyIndica+CoreDataProperties.swift */,
+				8AC97C462DE5FA810001EAF4 /* GlobalStats+CoreDataClass.swift */,
+				8AC97C472DE5FA810001EAF4 /* GlobalStats+CoreDataProperties.swift */,
+				8AC97C402DDE8D450001EAF4 /* ObjectiveEntity+CoreDataClass.swift */,
+				8AC97C412DDE8D450001EAF4 /* ObjectiveEntity+CoreDataProperties.swift */,
+				8AC97C262DDE7B000001EAF4 /* AuraStreak+CoreDataClass.swift */,
+				8AC97C272DDE7B000001EAF4 /* AuraStreak+CoreDataProperties.swift */,
+				8AC97C282DDE7B000001EAF4 /* XPStat+CoreDataClass.swift */,
+				8AC97C292DDE7B000001EAF4 /* XPStat+CoreDataProperties.swift */,
+				8AC97C2A2DDE7B000001EAF4 /* Velkrax+CoreDataClass.swift */,
+				8AC97C2B2DDE7B000001EAF4 /* Velkrax+CoreDataProperties.swift */,
 				8AC97BE52DDA94560001EAF4 /* TheSystemApp.swift */,
+				8AC97C442DDE8F030001EAF4 /* PersistenceController.swift */,
 				8AC97BE72DDA94560001EAF4 /* ContentView.swift */,
+				8AC97C1F2DDE12D40001EAF4 /* RewardsView.swift */,
+				8AC97C212DDE780D0001EAF4 /* TheSystemModel.xcdatamodeld */,
+				8AC97C1D2DDACBBB0001EAF4 /* CategoryDetailView.swift */,
+				8AC97C132DDA9C6D0001EAF4 /* MainTabView.swift */,
+				8A59A8D92E0358D400A90F0A /* BossesView.swift */,
+				8AC97C152DDA9C850001EAF4 /* DailyObjective.swift */,
+				8AC97C172DDA9C980001EAF4 /* QuestLogView.swift */,
+				8AC97C192DDA9CAE0001EAF4 /* RewardManager.swift */,
+				8AC97C0F2DDA96480001EAF4 /* XPManager.swift */,
+				8AC97C112DDA96720001EAF4 /* Category.swift */,
 				8AC97BE92DDA94590001EAF4 /* Assets.xcassets */,
 				8AC97BEB2DDA94590001EAF4 /* Preview Content */,
 			);
@@ -257,8 +326,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AC97C102DDA96480001EAF4 /* XPManager.swift in Sources */,
+				8A59A8DA2E0358D400A90F0A /* BossesView.swift in Sources */,
+				8A59A8DD2E035EB000A90F0A /* LadyIndica+CoreDataClass.swift in Sources */,
+				8A59A8DE2E035EB000A90F0A /* LadyIndica+CoreDataProperties.swift in Sources */,
 				8AC97BE82DDA94560001EAF4 /* ContentView.swift in Sources */,
+				8AC97C182DDA9C980001EAF4 /* QuestLogView.swift in Sources */,
+				8AC97C202DDE12D40001EAF4 /* RewardsView.swift in Sources */,
+				8AC97C482DE5FA810001EAF4 /* GlobalStats+CoreDataClass.swift in Sources */,
+				8AC97C492DE5FA810001EAF4 /* GlobalStats+CoreDataProperties.swift in Sources */,
+				8AC97C232DDE780D0001EAF4 /* TheSystemModel.xcdatamodeld in Sources */,
+				8AC97C2E2DDE7B000001EAF4 /* AuraStreak+CoreDataClass.swift in Sources */,
+				8AC97C2F2DDE7B000001EAF4 /* AuraStreak+CoreDataProperties.swift in Sources */,
+				8AC97C302DDE7B000001EAF4 /* XPStat+CoreDataClass.swift in Sources */,
+				8AC97C312DDE7B000001EAF4 /* XPStat+CoreDataProperties.swift in Sources */,
+				8AC97C322DDE7B000001EAF4 /* Velkrax+CoreDataClass.swift in Sources */,
+				8AC97C332DDE7B000001EAF4 /* Velkrax+CoreDataProperties.swift in Sources */,
 				8AC97BE62DDA94560001EAF4 /* TheSystemApp.swift in Sources */,
+				8AC97C422DDE8D450001EAF4 /* ObjectiveEntity+CoreDataClass.swift in Sources */,
+				8AC97C432DDE8D450001EAF4 /* ObjectiveEntity+CoreDataProperties.swift in Sources */,
+				8AC97C122DDA96720001EAF4 /* Category.swift in Sources */,
+				8AC97C1E2DDACBBB0001EAF4 /* CategoryDetailView.swift in Sources */,
+				8AC97C1A2DDA9CAE0001EAF4 /* RewardManager.swift in Sources */,
+				8AC97C142DDA9C6D0001EAF4 /* MainTabView.swift in Sources */,
+				8AC97C162DDA9C850001EAF4 /* DailyObjective.swift in Sources */,
+				8AC97C452DDE8F030001EAF4 /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +680,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8AC97C212DDE780D0001EAF4 /* TheSystemModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8AC97C222DDE780D0001EAF4 /* TheSystemModel.xcdatamodel */,
+			);
+			currentVersion = 8AC97C222DDE780D0001EAF4 /* TheSystemModel.xcdatamodel */;
+			name = TheSystemModel.xcdatamodeld;
+			path = /Users/kameronsomeson/Documents/apps/TheSystem/TheSystem/TheSystemModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8AC97BDA2DDA94560001EAF4 /* Project object */;
 }
