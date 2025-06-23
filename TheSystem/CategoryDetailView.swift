@@ -54,6 +54,10 @@ struct CategoryDetailView: View {
                             if category == .wisdom && obj.title == "Weed-Free Day" {
                                 xpManager.damageLadyIndica()
                             }
+
+                            if category == .power && obj.title == "Complete Website" {
+                                xpManager.chargeMachia()
+                            }
                         }
                     }) {
                         HStack {

@@ -7,6 +7,7 @@ class XPManager: ObservableObject {
     @Published var globalVelkraxHP: Int = 90
     @Published var globalLifeXP: Int = 0
     @Published var ladyIndica: LadyIndica?
+    @Published var machia: Machia?
 
     private let viewContext: NSManagedObjectContext
 
@@ -15,6 +16,7 @@ class XPManager: ObservableObject {
         loadXP()
         loadGlobalStats()
         fetchOrCreateLadyIndica()
+        fetchOrCreateMachia()
     }
 
     // MARK: - XP Persistence
@@ -93,6 +95,37 @@ class XPManager: ObservableObject {
         saveGlobalStats()
     }
 
+    // MARK: - Ally: Machia
+    private func fetchOrCreateMachia() {
+        let request: NSFetchRequest<Machia> = Machia.fetchRequest()
+        do {
+            let results = try viewContext.fetch(request)
+            if let existing = results.first {
+                machia = existing
+            } else {
+                let newMachia = Machia(context: viewContext)
+                newMachia.hp = 0
+                try viewContext.save()
+                machia = newMachia
+            }
+        } catch {
+            print("❌ Failed to fetch/create Machia:", error)
+        }
+    }
+
+    func chargeMachia() {
+        guard let machia = machia else { return }
+        if machia.hp < 5 {
+            machia.hp += 1
+            saveGlobalStats()
+        }
+    }
+
+    func resetMachia() {
+        machia?.hp = 0
+        saveGlobalStats()
+    }
+
     // MARK: - XP Mechanics
     func gainXP(category: Category, amount: Int) {
         xp[category, default: 0] += amount
@@ -148,7 +181,6 @@ class XPManager: ObservableObject {
         return max(10, Int(Double(level * level * 5) * 1.4))
     }
 
-
     func totalLifeXPForLevel(_ level: Int) -> Int {
         return totalXPForLevel(level)
     }
@@ -164,6 +196,7 @@ class XPManager: ObservableObject {
         globalLifeXP = 0
         resetAuraStreak()
         restoreLadyIndica()
+        resetMachia()
         saveGlobalStats()
     }
 }

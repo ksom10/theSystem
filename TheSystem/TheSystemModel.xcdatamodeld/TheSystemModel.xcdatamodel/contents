@@ -10,6 +10,9 @@
     <entity name="LadyIndica" representedClassName="LadyIndica" syncable="YES">
         <attribute name="hp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
+    <entity name="Machia" representedClassName="Machia" syncable="YES">
+        <attribute name="hp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
     <entity name="ObjectiveEntity" representedClassName="ObjectiveEntity" syncable="YES">
         <attribute name="category" optional="YES" attributeType="String"/>
         <attribute name="isCompleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
