@@ -3,6 +3,10 @@ import SwiftUI
 struct BossesView: View {
     @EnvironmentObject var xpManager: XPManager
 
+    @State private var showVelkraxResetAlert = false
+    @State private var showIndicaResetAlert = false
+    @State private var showMachiaResetAlert = false
+
     var body: some View {
         ScrollView {
             VStack(spacing: 32) {
@@ -23,6 +27,21 @@ struct BossesView: View {
                         .scaledToFit()
                         .frame(width: 320, height: 200)
                         .padding(.top, 10)
+
+                    Button("Reset Vel’krax") {
+                        showVelkraxResetAlert = true
+                    }
+                    .font(.caption)
+                    .padding(8)
+                    .background(Color.red)
+                    .foregroundColor(.white)
+                    .cornerRadius(8)
+                    .alert("Reset Vel’krax?", isPresented: $showVelkraxResetAlert) {
+                        Button("Confirm", role: .destructive) {
+                            xpManager.restoreVelkrax()
+                        }
+                        Button("Cancel", role: .cancel) {}
+                    }
                 }
 
                 Divider()
@@ -44,6 +63,21 @@ struct BossesView: View {
                             .scaledToFit()
                             .frame(width: 380, height: 240)
                             .padding(.top, 10)
+
+                        Button("Reset Lady Indica") {
+                            showIndicaResetAlert = true
+                        }
+                        .font(.caption)
+                        .padding(8)
+                        .background(Color.red)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                        .alert("Reset Lady Indica?", isPresented: $showIndicaResetAlert) {
+                            Button("Confirm", role: .destructive) {
+                                xpManager.restoreLadyIndica()
+                            }
+                            Button("Cancel", role: .cancel) {}
+                        }
                     }
                 } else {
                     Text("Loading Lady Indica...")
@@ -84,7 +118,20 @@ struct BossesView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                         .padding(.top, 10)
 
-
+                        Button("Reset Machia") {
+                            showMachiaResetAlert = true
+                        }
+                        .font(.caption)
+                        .padding(8)
+                        .background(Color.red)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                        .alert("Reset Machia?", isPresented: $showMachiaResetAlert) {
+                            Button("Confirm", role: .destructive) {
+                                xpManager.resetMachia()
+                            }
+                            Button("Cancel", role: .cancel) {}
+                        }
                     }
                 } else {
                     Text("Loading Machia...")

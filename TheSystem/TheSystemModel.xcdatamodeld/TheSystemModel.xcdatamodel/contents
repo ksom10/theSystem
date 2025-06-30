@@ -3,6 +3,9 @@
     <entity name="AuraStreak" representedClassName="AuraStreak" syncable="YES">
         <attribute name="streakCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
+    <entity name="DaysGone" representedClassName="DaysGone" syncable="YES">
+        <attribute name="hp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
     <entity name="GlobalStats" representedClassName=".GlobalStats" syncable="YES">
         <attribute name="lifeXP" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="velkraxHP" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
@@ -16,6 +19,14 @@
     <entity name="ObjectiveEntity" representedClassName="ObjectiveEntity" syncable="YES">
         <attribute name="category" optional="YES" attributeType="String"/>
         <attribute name="isCompleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="xpReward" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="QuestEntity" representedClassName="QuestEntity" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="dateCompleted" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="isCompleted" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="title" optional="YES" attributeType="String"/>
         <attribute name="xpReward" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>

@@ -9,7 +9,7 @@ struct ContentView: View {
             VStack(spacing: 32) {
                 // Title and Logo
                 VStack(spacing: 12) {
-                    Text("FAUX 100%")
+                    Text("Money is Power")
                         .font(.system(size: 40, weight: .bold))
                         .foregroundColor(.primary)
 

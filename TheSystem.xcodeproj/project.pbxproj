@@ -12,6 +12,8 @@
 		8A59A8DE2E035EB000A90F0A /* LadyIndica+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A59A8DC2E035EB000A90F0A /* LadyIndica+CoreDataProperties.swift */; };
 		8A59A8E12E05E91300A90F0A /* Machia+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A59A8DF2E05E91300A90F0A /* Machia+CoreDataClass.swift */; };
 		8A59A8E22E05E91300A90F0A /* Machia+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A59A8E02E05E91300A90F0A /* Machia+CoreDataProperties.swift */; };
+		8A59A8ED2E0A0EF900A90F0A /* QuestEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A59A8EB2E0A0EF900A90F0A /* QuestEntity+CoreDataClass.swift */; };
+		8A59A8EE2E0A0EF900A90F0A /* QuestEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A59A8EC2E0A0EF900A90F0A /* QuestEntity+CoreDataProperties.swift */; };
 		8AC97BE62DDA94560001EAF4 /* TheSystemApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97BE52DDA94560001EAF4 /* TheSystemApp.swift */; };
 		8AC97BE82DDA94560001EAF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC97BE72DDA94560001EAF4 /* ContentView.swift */; };
 		8AC97BEA2DDA94590001EAF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC97BE92DDA94590001EAF4 /* Assets.xcassets */; };
@@ -64,6 +66,8 @@
 		8A59A8DC2E035EB000A90F0A /* LadyIndica+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LadyIndica+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8A59A8DF2E05E91300A90F0A /* Machia+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Machia+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8A59A8E02E05E91300A90F0A /* Machia+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Machia+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8A59A8EB2E0A0EF900A90F0A /* QuestEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8A59A8EC2E0A0EF900A90F0A /* QuestEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8AC97BE22DDA94560001EAF4 /* TheSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC97BE52DDA94560001EAF4 /* TheSystemApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSystemApp.swift; sourceTree = "<group>"; };
 		8AC97BE72DDA94560001EAF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 		8AC97BE42DDA94560001EAF4 /* TheSystem */ = {
 			isa = PBXGroup;
 			children = (
+				8A59A8EB2E0A0EF900A90F0A /* QuestEntity+CoreDataClass.swift */,
+				8A59A8EC2E0A0EF900A90F0A /* QuestEntity+CoreDataProperties.swift */,
 				8A59A8DF2E05E91300A90F0A /* Machia+CoreDataClass.swift */,
 				8A59A8E02E05E91300A90F0A /* Machia+CoreDataProperties.swift */,
 				8A59A8DB2E035EB000A90F0A /* LadyIndica+CoreDataClass.swift */,
@@ -350,6 +356,8 @@
 				8A59A8E22E05E91300A90F0A /* Machia+CoreDataProperties.swift in Sources */,
 				8AC97C322DDE7B000001EAF4 /* Velkrax+CoreDataClass.swift in Sources */,
 				8AC97C332DDE7B000001EAF4 /* Velkrax+CoreDataProperties.swift in Sources */,
+				8A59A8ED2E0A0EF900A90F0A /* QuestEntity+CoreDataClass.swift in Sources */,
+				8A59A8EE2E0A0EF900A90F0A /* QuestEntity+CoreDataProperties.swift in Sources */,
 				8AC97BE62DDA94560001EAF4 /* TheSystemApp.swift in Sources */,
 				8AC97C422DDE8D450001EAF4 /* ObjectiveEntity+CoreDataClass.swift in Sources */,
 				8AC97C432DDE8D450001EAF4 /* ObjectiveEntity+CoreDataProperties.swift in Sources */,
