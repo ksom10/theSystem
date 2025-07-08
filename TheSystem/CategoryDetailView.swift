@@ -58,6 +58,15 @@ struct CategoryDetailView: View {
                             if category == .power && obj.title == "Complete Website" {
                                 xpManager.chargeMachia()
                             }
+                            
+                            if category == .health && obj.title == "Liquor-Free Day" {
+                                        xpManager.damageNightpour()
+                            }
+                            
+                            if category == .power && obj.title ==
+                                "Code" {
+                                xpManager.damageNeverest()
+                            }
                         }
                     }) {
                         HStack {

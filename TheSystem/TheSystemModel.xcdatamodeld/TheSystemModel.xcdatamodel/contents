@@ -3,9 +3,6 @@
     <entity name="AuraStreak" representedClassName="AuraStreak" syncable="YES">
         <attribute name="streakCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
-    <entity name="DaysGone" representedClassName="DaysGone" syncable="YES">
-        <attribute name="hp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-    </entity>
     <entity name="GlobalStats" representedClassName=".GlobalStats" syncable="YES">
         <attribute name="lifeXP" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="velkraxHP" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
@@ -14,6 +11,12 @@
         <attribute name="hp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <entity name="Machia" representedClassName="Machia" syncable="YES">
+        <attribute name="hp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Neverest" representedClassName="Neverest" syncable="YES">
+        <attribute name="hp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Nightpour" representedClassName="Nightpour" syncable="YES">
         <attribute name="hp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <entity name="ObjectiveEntity" representedClassName="ObjectiveEntity" syncable="YES">

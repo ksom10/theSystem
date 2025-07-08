@@ -6,6 +6,10 @@ struct BossesView: View {
     @State private var showVelkraxResetAlert = false
     @State private var showIndicaResetAlert = false
     @State private var showMachiaResetAlert = false
+    @State private var showNightpourResetAlert = false
+    @State private var showNeverestResetAlert = false
+
+
 
     var body: some View {
         ScrollView {
@@ -83,6 +87,86 @@ struct BossesView: View {
                     Text("Loading Lady Indica...")
                         .font(.headline)
                 }
+                
+                Divider()
+
+                // MARK: - Nightpour (Liquor Boss)
+                if let nightpour = xpManager.nightpour {
+                    VStack(spacing: 12) {
+                        Text("Nightpour HP: \(nightpour.hp)")
+                            .font(.system(size: 28, weight: .bold))
+                            .foregroundColor(.yellow)
+
+                        ProgressView(value: Double(nightpour.hp), total: 70)
+                            .progressViewStyle(.linear)
+                            .accentColor(.yellow)
+                            .frame(height: 10)
+
+                        Image("nightpour")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 380, height: 240)
+                            .padding(.top, 10)
+
+                        Button("Reset Nightpour") {
+                            showNightpourResetAlert = true
+                        }
+                        .font(.caption)
+                        .padding(8)
+                        .background(Color.red)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                        .alert("Reset Nightpour?", isPresented: $showNightpourResetAlert) {
+                            Button("Confirm", role: .destructive) {
+                                xpManager.restoreNightpour()
+                            }
+                            Button("Cancel", role: .cancel) {}
+                        }
+                    }
+                } else {
+                    Text("Loading Nightpour...")
+                        .font(.headline)
+                }
+                
+                // MARK: - Neverest (Code Boss)
+                if let neverest = xpManager.neverest {
+                    VStack(spacing: 12) {
+                        Text("Neverest HP: \(neverest.hp)")
+                            .font(.system(size: 28, weight: .bold))
+                            .foregroundColor(.white)
+
+                        ProgressView(value: Double(neverest.hp), total: 500)
+                            .progressViewStyle(.linear)
+                            .accentColor(.white)
+                            .frame(height: 10)
+
+                        Image("neverest")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 380, height: 240)
+                            .padding(.top, 10)
+
+                        Button("Reset Neverest") {
+                            showNeverestResetAlert = true
+                        }
+                        .font(.caption)
+                        .padding(8)
+                        .background(Color.red)
+                        .foregroundColor(.white)
+                        .cornerRadius(8)
+                        .alert("Reset Neverest?", isPresented: $showNeverestResetAlert) {
+                            Button("Confirm", role: .destructive) {
+                                xpManager.restoreNeverest()
+                            }
+                            Button("Cancel", role: .cancel) {}
+                        }
+                    }
+                } else {
+                    Text("Loading Neverest...")
+                        .font(.headline)
+                }
+
+
 
                 Divider()
 

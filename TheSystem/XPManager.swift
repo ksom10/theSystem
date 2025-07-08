@@ -8,6 +8,10 @@ class XPManager: ObservableObject {
     @Published var globalLifeXP: Int = 0
     @Published var ladyIndica: LadyIndica?
     @Published var machia: Machia?
+    @Published var nightpour: Nightpour?
+    @Published var neverest: Neverest?
+
+
 
     private let viewContext: NSManagedObjectContext
 
@@ -17,6 +21,9 @@ class XPManager: ObservableObject {
         loadGlobalStats()
         fetchOrCreateLadyIndica()
         fetchOrCreateMachia()
+        fetchOrCreateNightpour()
+        fetchOrCreateNeverest()
+
     }
 
     // MARK: - XP Persistence
@@ -94,6 +101,66 @@ class XPManager: ObservableObject {
         globalVelkraxHP = 90
         saveGlobalStats()
     }
+    
+    private func fetchOrCreateNightpour() {
+        let request: NSFetchRequest<Nightpour> = Nightpour.fetchRequest()
+        do {
+            let results = try viewContext.fetch(request)
+            if let existing = results.first {
+                nightpour = existing
+            } else {
+                let newNightpour = Nightpour(context: viewContext)
+                newNightpour.hp = 30
+                try viewContext.save()
+                nightpour = newNightpour
+            }
+        } catch {
+            print("❌ Failed to fetch/create Nightpour:", error)
+        }
+    }
+
+    func damageNightpour(_ amount: Int = 1) {
+        guard let nightpour = nightpour else { return }
+        nightpour.hp = max(nightpour.hp - Int32(amount), 0)
+        saveGlobalStats()
+    }
+
+    func restoreNightpour() {
+        guard let nightpour = nightpour else { return }
+        nightpour.hp = 70
+        saveGlobalStats()
+    }
+    
+    private func fetchOrCreateNeverest() {
+        let request: NSFetchRequest<Neverest> = Neverest.fetchRequest()
+        do {
+            let results = try viewContext.fetch(request)
+            if let existing = results.first {
+                neverest = existing
+            } else {
+                let newNeverest = Neverest(context: viewContext)
+                newNeverest.hp = 500
+                try viewContext.save()
+                neverest = newNeverest
+            }
+        } catch {
+            print("❌ Failed to fetch/create Neverest:", error)
+        }
+    }
+    
+    func damageNeverest(_ amount: Int = 1) {
+        guard let neverest = neverest else { return }
+        neverest.hp = max(neverest.hp - Int32(amount), 0)
+        saveGlobalStats()
+    }
+
+    func restoreNeverest() {
+        guard let neverest = neverest else { return }
+        neverest.hp = 500
+        saveGlobalStats()
+    }
+
+
 
     // MARK: - Ally: Machia
     private func fetchOrCreateMachia() {
@@ -160,7 +227,7 @@ class XPManager: ObservableObject {
     }
 
     func xpNeeded(for level: Int) -> Int {
-        return max(10, level * level * 5)
+        return 20 * level
     }
 
     func totalXPForLevel(_ level: Int) -> Int {
@@ -178,7 +245,7 @@ class XPManager: ObservableObject {
 
     func lifeXpNeeded(for level: Int) -> Int {
         // Slightly higher multiplier for life-level scaling (1.4x)
-        return max(10, Int(Double(level * level * 5) * 1.4))
+        return 30 * level
     }
 
     func totalLifeXPForLevel(_ level: Int) -> Int {

@@ -152,6 +152,7 @@ struct QuestLogView: View {
                 VStack(alignment: .leading, spacing: 6) {
                     HStack {
                         Text(quest.title ?? "Untitled")
+                            .foregroundColor(.black)
                         Spacer()
                         Image(systemName: "checkmark")
                             .foregroundColor(.green)
